@@ -1,0 +1,109 @@
+.navbar {
+    min-height: 65px;
+    
+    &.navbar-nav {
+        &.nav-link {
+            color: $gray-900;
+
+            &.active {
+                color: $blue;
+            }
+
+            &.dropdown-toggle {
+                &:hover {
+                    + ul {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-item.dropdown {
+        @include media-breakpoint-up(lg) {
+            .nav-link.dropdown-toggle {
+                &:after {
+                    display: none;
+                }
+            }
+
+            &:hover {
+                .dropdown-menu {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    > .container-fluid {
+        padding: 0;
+    }
+
+    .navbar-toggler {
+        padding: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 8px !important;
+        border-color: $primary;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .navbar-toggler-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .right-side {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        @include media-breakpoint-down(md) {  
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .cart {
+            .cart-btn {
+                @include media-breakpoint-down(xl) {  
+                    display: none;
+                }
+
+                img {
+                    width: 24px;
+                }
+            }
+            .cart-link {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                padding-left: 0;
+
+                @include media-breakpoint-up(xl) {  
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .navbar-collapse {
+        @include media-breakpoint-down(xl) {  
+            position: absolute;
+            top: calc(0% + 65px);
+            background-color: #fff;
+            width: 100%;
+            margin: -0.75rem;
+            padding: 0.75rem;
+            left: 0.75rem;
+            z-index: 10;
+        }
+    }
+}
+
+.navbar-toggler {
+    @extend .rounded;
+}

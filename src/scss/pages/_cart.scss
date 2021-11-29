@@ -1,0 +1,137 @@
+.top-head {
+    text-align: center;
+    max-width: 622px;
+    margin: auto;
+}
+
+.cart-page {
+    margin-bottom: 52px;
+
+    @include media-breakpoint-down(md) {
+        margin-bottom: 24px;
+    }
+
+    .warpper-cart-detail {
+        display: flex;
+        gap: 40px;
+        margin-top: 30px;
+
+        @include media-breakpoint-down(md) {
+            gap: 16px;
+        }
+
+        .left-side {
+            flex: 1 1 70%;
+            max-width: 70%;
+        }
+
+        .right-side {
+            flex: 1 1 30%;
+            max-width: 30%;
+        }
+
+        @include media-breakpoint-down(lg) {  
+            flex-direction: column;
+
+            .left-side,
+            .right-side {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .btn-order {
+        margin-top: 1rem;
+    }
+
+    .col-delete-product {
+        a {
+            width: 19px;
+            color: #828282;
+
+            &:hover,
+            i:hover {
+                text-decoration: none;
+            }
+            
+            i {
+                font-size: 19px;
+            }
+        }
+    }
+
+    table {
+        margin-top: 24px;
+
+        @include media-breakpoint-down(md) {  
+            margin-bottom: 0;
+        }
+
+        tr {
+            @include media-breakpoint-down(sm) {  
+                display: block;
+                clear: both;
+            }
+        }
+
+        td {
+            vertical-align: middle;
+            border: none;
+
+            .col-quantity {
+                min-width: 120px;
+                max-width: 230px;
+
+                @include media-breakpoint-down(xl) {  
+                    max-width: 200px;
+                }
+
+                @include media-breakpoint-down(lg) {  
+                    max-width: 150px;
+                }
+
+                @include media-breakpoint-down(md) {  
+                    max-width: 120px;
+                }
+            }
+
+            &.col-quantity,
+            &.col-price {
+                @include media-breakpoint-down(sm) {  
+                    float: left;
+                    clear: both;
+                    padding-left: 48px;
+                }
+            }
+
+            &.col-product-info {
+                @include media-breakpoint-down(sm) {  
+                   width: 100%;
+                }
+            }
+        }
+
+        .warpper-add-to-cart {
+            .wrapper-input-group {
+                max-width: 230px;
+
+                @include media-breakpoint-down(lg) {
+                    max-width: 150px;
+                }
+            }
+        }
+
+        .row-price-label {
+            justify-content: flex-end;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        .warpper-add-to-cart {
+            margin-bottom: 0;
+        }
+    }
+}

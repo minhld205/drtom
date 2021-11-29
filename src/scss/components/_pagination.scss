@@ -1,0 +1,25 @@
+.wrapper-pagination {
+    margin-top: 40px;
+
+    @include media-breakpoint-down(md) {  
+        margin-top: 24px;
+    }
+
+    .pagination {
+        margin-bottom: 0;
+    }
+
+    .page-item {
+        &.active {
+            border: 1px solid $primary;
+            border-radius: 4px;
+        }
+
+        &.page-item-prev,
+        &.page-item-next {
+            img {
+                width: 16px;
+            }
+        }
+    }
+}

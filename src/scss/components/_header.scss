@@ -1,0 +1,10 @@
+.user-logged {
+    .user-avatar {
+        width: 33px;
+        height: 33px;
+
+        + .user-name {
+            margin-left: 8px;
+        }
+    }
+}

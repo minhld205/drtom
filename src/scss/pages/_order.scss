@@ -1,0 +1,154 @@
+.head-title {
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.order-page {
+    margin-bottom: 96px;
+
+    @include media-breakpoint-down(md) {  
+        margin-bottom: 24px;
+    }
+
+    .wrapper-place-order-form {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .form-control,
+        .form-select {
+            background-color: $white;
+            min-width: 169px;
+        }
+
+        .card-user-info-order-form {
+            display: flex;
+            flex-direction: row;
+            gap: 66px;
+            padding: 40px;
+
+            @include media-breakpoint-down(xl) {  
+                gap: 24px;
+                padding: 32px;
+            }
+
+            @include media-breakpoint-down(md) {  
+                flex-direction: column;
+                gap: 16px;
+                padding: 24px;
+            }
+
+            > * {
+                flex: 1 1 50%;
+                max-width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                @include media-breakpoint-down(md) {  
+                    flex: 1 1 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .card-payment-method {
+            padding: 24px;
+            
+            .payment-method-item {
+                + .payment-method-item {
+                    border-top: 1px solid #e0e0e0;
+                    margin-top: 16px;
+                    padding-top: 16px;
+                }
+            }
+        }
+    }
+
+    .card {
+        background-color: #f2f2f2;
+    }
+
+    .place-order {
+        &.mobile {
+            display: none;
+
+            @include media-breakpoint-down(md) {  
+                display: block;
+            }
+        }
+
+        &.desktop {
+            display: none;
+            
+            @include media-breakpoint-up(md) {  
+                display: block;
+            }
+        }
+    }
+
+    .wrapper-banking-list {
+        background-color: $white;
+        margin-top: 16px;
+    }
+}
+
+.wrapper-order-detail {
+    margin-top: 32px;
+}
+
+.wrapper-user-order-info-form {
+    padding: 40px;
+}
+
+.wrapper-payment-method-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+
+    @include media-breakpoint-down(md) {  
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .left-side {
+        flex: 1 1 70%;
+        max-width: 70%;
+
+        @include media-breakpoint-down(md) {  
+            flex: 1 1 100%;
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    .right-side {
+        flex: 1 1 30%;
+        max-width: 30%;
+
+        @include media-breakpoint-down(md) {  
+            flex: 1 1 100%;
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.wrapper-btn-place-order {
+    margin-top: 2rem;
+
+    @include media-breakpoint-down(md) {
+        text-align: center;
+    }
+
+    button {
+        margin-bottom: 0.5rem;
+        width: 100%;
+
+        @include media-breakpoint-up(md) {
+            width: 271px;
+        }
+    }
+}
+

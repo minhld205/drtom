@@ -1,0 +1,215 @@
+.footer-content {
+    background-color: $white;
+    border-radius: 1rem;
+    padding: 2rem;
+
+    @include media-breakpoint-down(md) {  
+        padding: 1rem;
+    }
+
+    .column-section {
+        flex: 1 auto;
+
+        @include media-breakpoint-down(md) {  
+            width: 100%;
+
+            + .column-section {
+                margin-top: 0.5rem;
+            }
+        }
+    }
+
+    .wrapper-footer {
+        display: flex;;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+
+        @include media-breakpoint-down(lg) {  
+            flex-wrap: wrap;
+        }
+
+        @include media-breakpoint-down(md) {  
+            flex-direction: column;
+        }
+
+        .logo-footer {
+            height: 71px;
+
+            @include media-breakpoint-down(lg) {
+                height: 44px;
+                flex: 1 1 100%;
+                max-width: 100%;
+
+                img {
+                    height: 44px;
+                }
+            }
+        }
+    }
+
+    .wrapper-logo-footer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      
+        img {
+            @include media-breakpoint-down(lg) {
+                height: 44px;
+                margin: 0 1.5rem 0 0 ;
+            }
+
+            @include media-breakpoint-down(md) {
+                margin:0;
+            }
+        }
+
+        @include media-breakpoint-down(lg) {  
+            flex-direction: row;
+        }
+
+        @include media-breakpoint-down(md) {  
+            flex-direction: row;
+        }
+    }
+}
+
+.footer-section {
+    padding: 2rem 2rem 1rem 2rem;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+.copyright {
+    color: $white;
+    margin: 1rem 0 0 0;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-us-footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+
+    @include media-breakpoint-down(md) {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+
+        button {
+            width: 100%;
+        }
+    }
+
+    .input-group {
+        &.desc {
+            input {
+                @include media-breakpoint-up(md) {
+                    width: 268px;
+                }
+            }
+        }
+    }
+}
+
+.footer-head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h2, p {
+        color: $white;
+        text-align: center;
+        text-transform: capitalize;
+        width: 100%;
+    }
+
+    p {
+        padding: 0 10px;
+    }
+}
+
+.footer-list-content {
+    li{
+        & + li {
+            margin-top: 0.5rem;
+        }
+    }
+
+    a {
+        color: $black-custom;
+        display: flex;
+        align-items: flex-start;
+
+        &:before {
+            content: '';
+            background-image: url("images/chevron_right_color.svg");
+            background-repeat: no-repeat;
+            background-size: 14px 14px;
+            background-position: center;
+            width: 14px;
+            height: 14px;
+            display: block;
+            margin-right: 6px;
+            margin-top: 4px;
+        }
+    }
+}
+
+.logo-license-footer {
+    @include media-breakpoint-up(md) {  
+        margin-top: 89px;
+    }
+}
+
+.bg-footer {
+    background-image: url("images/bg_footer.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.form-contact-us {
+    margin-bottom: 1rem;
+}
+
+.media-list {
+    .media-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2rem;
+        width: 2rem;
+        position: relative;
+
+        &:after {
+            content: '';
+            width: 2rem;
+            height: 2rem;
+            background-color: $primary;
+            padding: 10px;
+            border-radius: 50%;
+            border-color: $primary;
+            opacity: 0.2;   
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.address {
+    line-height: 28px;
+
+    @include media-breakpoint-down(md) {  
+        margin: 0;
+    }
+}

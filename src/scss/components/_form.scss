@@ -1,0 +1,40 @@
+.form-select {
+    padding-right: 50px;
+    color: #333;
+    cursor: pointer;
+}
+
+.form-check-input:checked[type="checkbox"] {
+    background-size: 14px;
+}
+
+.form-check {
+    input,label {
+        cursor: pointer;
+    }
+    
+    .form-check-input {
+        width: 24px;
+        height: 24px;
+        flex: 0 0 24px;
+
+        + label {
+            margin-left: 8px;
+            width: calc(100% - 8px * 2);
+        }
+        
+        &[type="radio"] {
+            border-color: #bdbdbd;
+            background-color: $white;
+            margin-top: 0;
+
+            &:checked {
+                border-color: $primary;
+
+                + label {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

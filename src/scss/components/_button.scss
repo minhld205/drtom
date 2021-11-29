@@ -1,0 +1,97 @@
+$icon-size : 16px;
+
+.custom-selector {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+
+    &:after {
+        border: none;
+        background-image: url("images/chevron_down.svg"); 
+        background-repeat: no-repeat;
+        background-size: $icon-size $icon-size;
+        background-position: center;
+        width: $icon-size;
+        height: $icon-size;
+    }
+
+    &.show {
+        &:after {
+            background-image: url("images/chevron_up.svg"); 
+        }
+    }
+}
+
+.custom-popper {
+    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 1rem;
+    margin-top: 0;
+}
+
+.btn {
+    text-transform: capitalize;
+    white-space: nowrap;
+
+    &.btn-primary {
+        &,
+        &:hover,
+        &:focus {
+            color: $white;
+        }
+    }
+
+    &.btn-secondary {
+        &,
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
+    }
+
+    &.dropdown-toggle {
+        @extend .custom-selector;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        &.no-icon {
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    &-link {
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    &-close-modal {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        z-index: 1;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+}
+
+.btn-group {
+    .dropdown-menu {
+        @extend .custom-popper;
+    }
+}
+
+.nav-item {
+    &.dropdown {
+        .nav-link.dropdown-toggle{
+            @extend .custom-selector;
+        }
+
+        .dropdown-menu {
+            @extend .custom-popper;
+        }
+    }
+}

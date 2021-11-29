@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <module href="/components/head.html"></module>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+        <module href="/components/navigator.html"></module>
+    </header>
+    <main class="main">
+      <module href="/pages/homepage.html"></module>
+      <!-- animation homepage -->
+      <script>
+        $(window).on("load",function() {
+
+          $(window).scroll(function() {
+            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+
+            $(".homepage-effect").each(function() {
+              var objectBottom = $(this).offset().top;
+              if (objectBottom < windowBottom) {
+                $(this).addClass("visible animate__animated animate__fadeInUp");
+              }
+            });
+
+          }).scroll();
+          
+        });
+      </script>
+    </main>
+
+     <module href="/components/footer.html"></module>
+  </body>
+  <script src="bundle.js" defer async></script>
+  
+</html>

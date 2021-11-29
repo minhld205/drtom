@@ -1,0 +1,90 @@
+.order-confirm-page {
+    margin-bottom: 32px;
+
+    @include media-breakpoint-down(md) {  
+        margin-bottom: 24px;
+    }
+
+    .sub-info {
+        font-size: 16px;
+        margin-top: 32px;
+
+        @include media-breakpoint-down(md) {  
+            margin-top: 24px;
+        }
+    }
+}
+
+.wrapper-order-confirm {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+
+    @include media-breakpoint-down(lg) {  
+        gap: 24px;
+        flex-direction: column;
+    }
+
+    > * {
+        flex: 1 1 50%;
+        max-width: 50%;
+
+        @include media-breakpoint-down(lg) {  
+            flex: 1 1 100%;
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    .card {
+        width: 100%;
+        padding: 24px;
+    }
+
+    .product-list {
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 16px;
+    }
+
+    .row-price-label {
+        p {
+            margin-bottom: 0;
+        }
+
+        + .row-price-label {
+            margin-top: 16px;
+        }
+
+        &.total {
+            margin-top: 16px;
+        }
+    }
+
+    .row-label-info {
+        + .row-label-info {
+            margin-top: 16px;
+            padding-top: 16px;
+        }
+
+        + .row-price-label,
+        + .row-label-info {
+            border-top: 1px solid #e0e0e0;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        &.product {
+            border-top: none;
+            margin-top: 0;
+        }
+    }
+
+    .wrapper-total {
+        border-top: 1px solid #e0e0e0;
+        padding-top: 16px;
+        margin-top: 16px;
+    }
+}

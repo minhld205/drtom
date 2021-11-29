@@ -1,0 +1,117 @@
+/* change theme colors */
+$primary: #16c7bd !default;
+$primary-light: #e2fff9;
+$secondary: #16c7bd33 !default;
+$black-custom: #333;
+$dropdown-link-color: $black-custom;
+$btn-link-color: $primary !default;
+/* end custom.scss */
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1280px
+) !default;
+// scss-docs-end container-max-widths
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 769px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px
+) !default;
+// scss-docs-end grid-breakpoints
+
+$navbar-light-color:                $black-custom !default;
+$navbar-light-hover-color:          rgba($black-custom, .7) !default;
+$navbar-light-active-color:         $primary !default;
+$navbar-light-disabled-color:       rgba($black-custom, .3) !default;
+$navbar-light-toggler-border-color: rgba($black-custom, .1) !default;
+
+// button & input
+$btn-font-size: 14px;
+$btn-font-size-sm: 16px;
+$btn-font-size-lg: 16px;
+
+$input-btn-font-size: 14px;
+$input-btn-font-size-sm: 16px;
+$input-btn-font-size-lg: 16px;
+
+$btn-border-radius: 24px;
+$btn-border-radius-sm: 24px;
+$btn-border-radius-lg: 24px;
+
+$input-btn-padding-x: 16px;
+$input-btn-padding-x-sm: 16px;
+$input-btn-padding-x-lg: 16px;
+
+$input-btn-padding-y: 0.285rem;
+$input-btn-padding-y-sm: 6px;
+$input-btn-padding-y-lg: 0.57rem;
+
+$btn-padding-y-sm: $input-btn-padding-y-sm;
+$btn-padding-x-sm: $input-btn-padding-x-sm;
+$btn-padding-y-lg: $input-btn-padding-y-lg;
+$btn-padding-x-lg: $input-btn-padding-x-lg;
+
+// font
+$font-size-base: 0.875rem;
+$font-family-base: Roboto;
+$link-color: $black-custom;
+$headings-font-weight: 700;
+$btn-font-weight: 500;
+$line-height-base: 1.8;
+
+// selection
+$form-select-border-radius: 40px;
+$form-select-border-radius-sm: 40px;
+$form-select-border-radius-lg: 40px;
+$form-select-bg: #f2f2f2;
+
+// input
+$input-border-color: rgba(255, 255, 255, 0.5);
+$input-border-radius: 12px;
+$input-border-radius-sm: 12px;
+$input-border-radius-lg: 12px;
+$input-color: $black-custom;
+$input-placeholder-color: #828282;
+
+// card
+$card-border-radius:  1.5rem;
+
+// modal
+$modal-inner-padding: 1rem;
+
+// breadcrumb
+$breadcrumb-divider-color:          #828282;
+$breadcrumb-active-color:           #828282;
+$breadcrumb-divider:                quote("/");
+
+// pagination
+$pagination-border-width: 0;
+$pagination-active-bg: transparent;
+$pagination-active-color: $primary;
+$pagination-active-border-color: $primary;
+$pagination-border-radius: 4px;
+$pagination-border-radius-sm: 4px;
+$pagination-border-radius-lg: 4px;
+$pagination-focus-bg: transparent;
+
+$pagination-padding-y: 0;
+$pagination-padding-x: 8px;
+
+// 
+$form-check-input-bg: #f2f2f2;
+$form-check-input-checked-bg-color: #f2f2f2;
+$form-check-input-border: #bdbdbd;
+$form-check-radio-border: #bdbdbd;
+$form-check-input-checked-border-color: #bdbdbd;
+$form-check-input-border-radius: 8px;
+$form-check-input-border: 1px solid #bdbdbd;
+$form-check-input-checked-bg-image:  url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 15 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.317 0.183434C14.561 0.427517 14.561 0.823245 14.3169 1.06732L5.56693 9.81693C5.32286 10.061 4.92716 10.061 4.68308 9.81694L0.308078 5.44233C0.0639894 5.19826 0.0639718 4.80253 0.308039 4.55844C0.552105 4.31436 0.947833 4.31434 1.19192 4.5584L5.12499 8.49112L13.4331 0.183415C13.6772 -0.0606576 14.0729 -0.0606488 14.317 0.183434Z' fill='black'/%3E%3C/svg%3E%0A");
+$form-check-radio-checked-bg-image:  url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%2316c7bd'/%3e%3c/svg%3e");

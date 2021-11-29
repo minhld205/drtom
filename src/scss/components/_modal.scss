@@ -1,0 +1,114 @@
+.modal-content {
+    @extend .border-app;
+    border: 1px solid #dbdbdb;
+
+    .modal-footer {
+        margin: 0 -1rem;
+        padding-bottom: 0;
+    }
+}
+
+.modal-body {
+    overflow-x: hidden;
+
+    .btn-close-modal {
+        padding-left: 0;
+        padding-right: 0;
+        width: 34px;
+        height: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.modal-title {
+    &, + p {
+        text-transform: capitalize;
+    }
+}
+
+.wrapper-login-form-modal {
+    display: flex;
+    overflow: hidden;
+    min-height: 410px;
+    
+    > * {
+        flex: 0 0 50%;
+        width: 50%;
+
+        @include media-breakpoint-down(lg) {
+            flex: 0 0 100%;
+            width: 100%;
+        }
+    }
+
+    .left-side {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 1rem 2rem 1rem 1rem;
+        overflow: auto;
+
+        @include media-breakpoint-down(lg) {
+            padding: 1rem;
+        }
+
+        &-footer {
+            font-size: 10px;
+            margin: 0;
+
+            a {
+                font-weight: 400 !important;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .right-site {
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+        
+        img{
+            position: absolute;
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+            top: 0;
+        }
+    }
+}
+
+.msg-modal {
+    .modal-body {
+        padding: 0;
+    }
+
+    .card {
+        background-color: #f2f2f2;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 56px;
+        max-width: 56px;
+        height: 56px;
+    }
+
+    .msg-content {
+        color: #828282;
+        text-align: center;
+    }
+
+    .msg-image {
+        text-align: center;
+    }
+
+    button {
+        min-width: 165px;
+        margin-top: 8px
+    }
+}

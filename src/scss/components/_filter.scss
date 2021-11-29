@@ -1,0 +1,93 @@
+.wrapper-sort {
+    color: #828282;
+}
+
+.wrapper-filter {
+    .filter {
+        .filter-title {
+            cursor: pointer;
+            font-weight: 500;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            &:after {
+                content: '';
+                background-image: url("images/chevron_up.svg");
+                display: inline-flex;
+                background-size: 20px;
+                max-width: 20px;
+                height: 20px;
+                background-size: 20px;
+                background-repeat: no-repeat;
+                width: 100%;
+            }
+
+            &.collapsed {
+                &:after {
+                    background-image: url("images/chevron_down.svg");
+                }
+            }
+        }
+
+        .filter-item-list {
+            margin-top: 24px;
+
+            @include media-breakpoint-down(md) {
+                margin-top: 16px;
+            }
+
+            .form-check {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding-left: 0;
+
+                input {
+                    margin: 3px 0 0 0;
+                }
+            }
+        }
+
+        ul {
+            margin: 0;
+            
+            li {
+                label {
+                    @extend .text-capitalize;
+                    color: #828282;
+                    font-weight: 400;
+                    font-size: 16px;
+                    margin-right: 16px;
+
+                    &.active {
+                        color: $primary;
+                    }
+                }
+
+                + li {
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        + .filter {
+            margin-top: 48px;
+        }
+    }
+}
+
+.price-from-to-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-end;
+
+    .wrapper-input {
+        width: 100%;
+    }
+    
+    button {
+        width: fit-content;
+    }
+}

@@ -1,0 +1,32 @@
+<div class="card card-payment-method">
+    <div class="payment-method-item">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="payment-method" id="credit-card" checked>
+            <label class="form-check-label" for="credit-card">
+                Thanh toán bằng thẻ quốc tế Visa, Master, JCB (Thẻ tín dụng)
+            </label>
+        </div>
+    </div>
+    <div class="payment-method-item">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="payment-method" id="cod">
+            <label class="form-check-label" for="cod">
+                Bằng tiên mặt khi nhận hàng (COD)
+            </label>
+        </div>
+    </div>
+    <div class="payment-method-item">
+        <div class="form-check">
+            <input class="form-check-input" id="internal-banking" type="radio" name="payment-method">
+            <label class="form-check-label" for="internal-banking">
+                Thẻ ATM nội địa/ Internet Banking (Chuyển khoản)
+            </label>
+            <div class="collapse-banking" id="collapse-banking">
+                <module href="/components/orderpage/banking_internal_list.html"></module>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="place-order desktop">
+    <module href="/components/orderpage/btn_place_order.html"></module>
+</div>

@@ -1,0 +1,39 @@
+// core
+@import '_variables.scss';
+
+// libs
+@import 'libs/_bootstrap.scss';
+@import 'libs/_swiper.scss';
+
+// global
+@import '_global.scss';
+
+// components
+@import "components/_header.scss";
+@import "components/_filter.scss";
+@import "components/_pagination.scss";
+@import "components/_form.scss";
+@import "components/_button.scss";
+@import "components/_nav.scss";
+@import "components/_footer.scss";
+@import "components/_breadcrumb.scss";
+@import "components/_modal.scss";
+@import "components/_card.scss";
+@import "components/_input.scss";
+@import "components/_cart.scss";
+@import "components/_swiper.scss";
+@import "components/_article.scss";
+
+// pages
+@import "pages/_homepage.scss";
+@import "pages/_forgotpassword.scss";
+@import "pages/_cart.scss";
+@import "pages/_product.scss";
+@import "pages/_order.scss";
+@import "pages/_orderconfirm.scss";
+@import "pages/_article.scss";
+@import "pages/_blog.scss";
+@import "pages/_contactus.scss";
+
+// custom
+@import '_custom.scss';

@@ -1,0 +1,4 @@
+.package-lock.json
+.git
+/build
+/node_modules

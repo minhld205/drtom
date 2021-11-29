@@ -1,0 +1,25 @@
+.bg-breadcrumb {
+    background-color: #f2f2f2;
+}
+
+.wrapper-breadcrumb {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    @include media-breakpoint-down(md) {
+        margin-bottom: 1.5rem;
+    }
+
+    .breadcrumb {
+        @extend .text-capitalize;
+        margin: 0;
+    }
+
+    a {
+        color: #828282;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}
