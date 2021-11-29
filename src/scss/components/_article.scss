@@ -10,6 +10,61 @@
         height: 305px;
         object-fit: cover;
     }
+
+    &.card-article-wide {
+        flex-direction: row;
+        gap: 32px;
+
+        @include media-breakpoint-down(lg) {
+            gap: 16px;
+        }
+
+        @include media-breakpoint-down(md) {
+            flex-direction: column;
+        }
+
+        .wrapper-main-img {
+            flex: 1 1 30%;
+            max-width: 30%;
+
+            @include media-breakpoint-down(lg) {
+                flex: 1 1 40%;
+                max-width: 40%;
+            }
+
+            @include media-breakpoint-down(md) {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+
+        .wrapper-article-info {
+            flex: 1 1 70%;
+            max-width: 70%;
+
+            @include media-breakpoint-down(lg) {
+                flex: 1 1 60%;
+                max-width: 60%;
+            }
+
+            @include media-breakpoint-down(md) {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+
+        img {
+            height: auto;
+            
+            @include media-breakpoint-up(md) {
+                height: 205px;
+            }
+        }
+
+        .date {
+            margin-top: 0;
+        }
+    }
 }
 
 .wrapper-article-related {

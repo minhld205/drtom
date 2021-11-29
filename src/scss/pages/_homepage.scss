@@ -227,6 +227,8 @@
         &.swiper {
             img {
                 border-radius: $card-border-radius;
+                height: 233px;
+                object-fit: cover;
             }
         }
     }

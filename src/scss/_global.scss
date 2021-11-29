@@ -536,3 +536,18 @@ textarea {
         height: 408px;
     }
 }
+
+.wrapper-search-empty {
+    i, i:before {
+        width: 100px;
+        height: 100px;
+        background-size: 100px;
+        color: #333;
+        margin: auto;
+    }
+
+    .search-empty-info {
+        max-width: calc(100% - 50px);
+        margin: auto;
+    }
+}

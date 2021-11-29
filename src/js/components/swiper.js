@@ -47,6 +47,18 @@ export function swiperSliders() {
                     spaceBetween: 16
                 },
                 770: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 32,
+                },
+                1025: {
+                    slidesPerView: 4.5,
+                    spaceBetween: 32,
+                },
+                1440: {
+                    slidesPerView: 5.5,
+                    spaceBetween: 32,
+                },
+                1600: {
                     slidesPerView: 6,
                     spaceBetween: 32,
                 },
