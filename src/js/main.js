@@ -8,6 +8,8 @@ function handleSlider() {
     const slider = swiperSliders();
 
     slider.swiperAwardImagesLoaded();
+    slider.swipeNewsListLoaded();
+    slider.swiperAwardListLoaded();
     slider.swiperMainBannerHomepageLoaded();
     slider.swiperMainProductImage();
     slider.swiperContentListLoaded();

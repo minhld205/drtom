@@ -205,14 +205,14 @@
     .award-list {
         display: flex;
         justify-content: space-around;
-        gap: 100px;
+        
+        .swiper-slide {
+            text-align: center;
+        }
 
-        @include media-breakpoint-down(md) {  
-            gap: 16px;
-
-            img {
-                height: 95px;
-            }
+        img {
+            height: 200px;
+            max-width: fit-content;
         }
     }
 

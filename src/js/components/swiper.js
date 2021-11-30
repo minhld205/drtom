@@ -43,7 +43,7 @@ export function swiperSliders() {
                     spaceBetween: 16
                 },
                 640: {
-                    slidesPerView: 1.5,
+                    slidesPerView: 2.5,
                     spaceBetween: 16
                 },
                 770: {
@@ -56,6 +56,37 @@ export function swiperSliders() {
                 },
                 1440: {
                     slidesPerView: 5.5,
+                    spaceBetween: 32,
+                },
+                1600: {
+                    slidesPerView: 6,
+                    spaceBetween: 32,
+                },
+            },
+        });
+    };
+
+    const swiperAwardListLoaded = () => {
+        swiperInit(".award-list", {
+            slidesPerView: 6,
+            spaceBetween: 32,
+            grabCursor: true,
+            loop: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 2,
+                    spaceBetween: 16
+                },
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 16
+                },
+                770: {
+                    slidesPerView: 4,
+                    spaceBetween: 32,
+                },
+                1440: {
+                    slidesPerView: 5,
                     spaceBetween: 32,
                 },
                 1600: {
@@ -103,6 +134,52 @@ export function swiperSliders() {
             },
         );
     };
+
+    const swipeNewsListLoaded = () => {
+        swiperInit(
+            ".news-list",
+            {
+                slidesPerView: 4,
+                spaceBetween: 45,
+                centeredSlides: true,
+                grabCursor: true,
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 16
+                    },
+                    320: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 16
+                    },
+                    480: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 16
+                    },
+                    640: {
+                        slidesPerView: 2.5,
+                        spaceBetween: 21
+                    },
+                    770: {
+                        slidesPerView: 2.5,
+                        spaceBetween: 21
+                    },
+                    1025: {
+                        slidesPerView: 4,
+                        spaceBetween: 32,
+                    },
+                    1600: {
+                        slidesPerView: 4,
+                        spaceBetween: 32,
+                    },
+                },
+            },
+        );
+    };
     
     const swiperMainProductImage = () => {
         const productThumbSidebar = swiperInit(".main-product-image-left-side", {
@@ -127,6 +204,8 @@ export function swiperSliders() {
     return {
         swiperAwardImagesLoaded,
         swiperContentListLoaded,
+        swipeNewsListLoaded,
+        swiperAwardListLoaded,
         swiperMainBannerHomepageLoaded,
         swiperMainProductImage,
     };
