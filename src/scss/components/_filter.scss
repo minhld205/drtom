@@ -77,6 +77,19 @@
     }
 }
 
+.wrapper-filter-mobile {
+    .offcanvas-header {
+        justify-content: flex-end;
+    }
+}
+
+.filter-clear {
+    .btn-clear {
+        margin-top: 16px;
+        width: 100%;
+    }
+}
+
 .price-from-to-form {
     display: flex;
     flex-direction: column;
