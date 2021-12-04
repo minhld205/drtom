@@ -1,6 +1,6 @@
 import "./libs/bootstrap";
-import "./libs/zoom";
 import { swiperSliders } from "./components/swiper";
+import { handleZoomMainProductImage } from "./components/zoomMainProductImage";
 
 var $ = window.$;
 
@@ -40,12 +40,6 @@ function handleStopVideoWhenCloseModal() {
             $modal.html(html);
         });
     }
-}
-
-function handleZoomMainProductImage() {
-    $(".main-product-image-thumb .swiper-slide").zoom({
-        touch: false
-    });
 }
 
 function initLoaded() {
