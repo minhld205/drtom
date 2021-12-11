@@ -12,6 +12,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+    position: relative;
 }
 
 .limit-line {
@@ -549,5 +550,28 @@ textarea {
     .search-empty-info {
         max-width: calc(100% - 50px);
         margin: auto;
+    }
+}
+
+.hotline-contact {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9;
+
+    @include media-breakpoint-down(sm) {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    a {
+        @extend .shadow;
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: $primary;
     }
 }

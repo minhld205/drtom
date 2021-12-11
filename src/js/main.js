@@ -42,11 +42,25 @@ function handleStopVideoWhenCloseModal() {
     }
 }
 
+function handleClickNavLinkMenu() {
+    $(".nav-link", "#menu-header").click(function () {
+        const dropdownNavLink = $(this);
+        const href = dropdownNavLink.attr("href");
+
+        if (!["#", "/"].includes(href)) {
+            window.location.href = href;
+        }
+    
+        return false;
+    });
+}
+
 function initLoaded() {
     handleAddQuantity();
     handleSlider();
     handleStopVideoWhenCloseModal();
     handleZoomMainProductImage();
+    handleClickNavLinkMenu();
 }
 
 $(document).ready(function () {
