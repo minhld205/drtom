@@ -43,7 +43,7 @@ function handleStopVideoWhenCloseModal() {
 }
 
 function handleClickNavLinkMenu() {
-    $(".nav-link", "#menu-header").click(function () {
+    $(".nav-link-href", "#menu-header").click(function () {
         const dropdownNavLink = $(this);
         const href = dropdownNavLink.attr("href");
 
